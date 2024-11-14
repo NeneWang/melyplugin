@@ -2,9 +2,8 @@
 /**
  * Plugin Name: Mely Plugin
  * Version: 1.0.0
- * Plugin URI: https://wp2e.recuweb.com/installer/hlashbrooke-mely-plugin/
  * Description: This is your starter template for your next WordPress plugin.
- * Author: WP Package Editor
+ * Author: Nelson Wang
  * Author URI: https://github.com/NeneWang
  * Requires at least: 4.0
  * Tested up to: 4.0
