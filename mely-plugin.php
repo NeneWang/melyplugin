@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Mely Plugin
  * Version: 1.0.0
- * Description: This is your starter template for your next WordPress plugin.
+ * Description: Plugin con funcionalidades personalizadas para Mely.
  * Author: Nelson Wang
  * Author URI: https://github.com/NeneWang
  * Requires at least: 4.0
@@ -24,6 +24,7 @@ require_once 'includes/class-mely-plugin-settings.php';
 require_once 'includes/lib/class-mely-plugin-admin-api.php';
 require_once 'includes/lib/class-mely-plugin-post-type.php';
 require_once 'includes/lib/class-mely-plugin-taxonomy.php';
+require_once 'includes/custom-elementor.php';
 
 /**
  * Returns the main instance of WordPress_Plugin_Template to prevent the need to use globals.
