@@ -1,0 +1,55 @@
+/* Social Media Container */
+.social-media-circles {
+    display: flex;
+    gap: 15px; /* Adds space between the circles */
+    align-items: center; /* Vertically centers the circles */
+    justify-content: flex-start; /* Aligns circles to the left */
+    margin-top: 10px; /* Add space between the logo and circles */
+}
+
+/* Individual Circle Styling */
+.social-media-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Circle width */
+    height: 50px; /* Circle height */
+    border-radius: 50%; /* Makes the element a perfect circle */
+    background-color: #f4f4f4; /* Light gray background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth hover animations */
+    cursor: pointer; /* Changes cursor to a pointer on hover */
+}
+
+/* Icon Styling */
+.social-media-circle i {
+    font-size: 20px; /* Icon size */
+    color: #333; /* Default icon color */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+/* Hover Effects */
+.social-media-circle:hover {
+    background-color: #dcdcdc; /* Darker gray on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.social-media-circle:hover i {
+    color: #000; /* Darker icon color on hover */
+}
+
+/* Optional: Media Query for Mobile */
+@media screen and (max-width: 768px) {
+    .social-media-circles {
+        gap: 10px; /* Smaller spacing for smaller screens */
+    }
+
+    .social-media-circle {
+        width: 40px; /* Reduce circle size */
+        height: 40px;
+    }
+
+    .social-media-circle i {
+        font-size: 16px; /* Reduce icon size */
+    }
+}

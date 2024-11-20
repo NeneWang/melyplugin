@@ -11,6 +11,7 @@
 namespace Melycustom\ElementorWidgets;
 
 use Melycustom\ElementorWidgets\Widgets\TolstoySidevideo;
+use Melycustom\ElementorWidgets\Widgets\Social_Media_Circles;
 
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
@@ -46,9 +47,11 @@ final class MelyElementorWidgets {
 
         // Require the widget class.
         require_once __DIR__ . '/widgets/video-side.php';
+        require_once __DIR__ . '/widgets/social-media-circles.php';
 
         // Register widget with elementor.
         \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new TolstoySidevideo() );
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type( new Social_Media_Circles() );
 
     }
 
@@ -71,6 +74,15 @@ final class MelyElementorWidgets {
                 'icon'  => 'fa fa-plug'
             ]
         );
+
+        $elements_manager->add_category(
+            'socialmediacircles',
+            [
+                'title' => __( 'MelyCustom', 'socialmediacircles' ),
+                'icon'  => 'fa fa-plug'
+            ]
+        );
+
 
     }
 
